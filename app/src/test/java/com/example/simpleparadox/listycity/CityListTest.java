@@ -41,6 +41,6 @@ class CityListTest {
 
         cityList.delete(city1);
         assertEquals(1, cityList.countCities());
-        assertTrue(cityList.hasCity(new City("Regina", "Saskatchewan")));
+        assertFalse(cityList.hasCity(new City("Regina", "Saskatchewan")));
     }
 }
